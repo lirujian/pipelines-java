@@ -10,6 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+
+- task: rudyfirstcostomtask@0
+  inputs:
+    samplestring: "Vanessa"
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
