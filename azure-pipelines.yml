@@ -10,11 +10,14 @@ trigger:
 #  vmImage: windows-latest
 pool: local
 
+variables:
+- group: VG1
+
 steps:
 
 - task: rudyfirstcostomtask@0
   inputs:
-    samplestring: "Vanessa"
+    samplestring: ${friend}
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
