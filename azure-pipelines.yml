@@ -6,9 +6,9 @@
 trigger:
 - main
 
-#pool:
-#  vmImage: windows-latest
-pool: local
+pool:
+  vmImage: ubuntu-latest
+#pool: local
 
 variables:
 - group: VG1
