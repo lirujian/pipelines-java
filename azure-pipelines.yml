@@ -17,7 +17,7 @@ steps:
 
 - task: rudyfirstcostomtask@0
   inputs:
-    samplestring: ${friend}
+    samplestring: $(friend)
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
